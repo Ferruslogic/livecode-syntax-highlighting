@@ -1,0 +1,71 @@
+{
+	"name": "livecode",
+	"displayName": "LiveCode",
+	"description": "Syntax highlighting for livecode language",
+	"version": "0.0.1",
+	"publisher": "FerrusLogic",
+	"author": "FerrusLogic",
+	"icon": "images/CILogo.png",
+	"engines": {
+		"vscode": "^1.24.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "livecodescript",
+				"aliases": [
+					"livecodescript"
+				],
+				"extensions": [
+					".livecodescript"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "livecodescript",
+				"scopeName": "source.livecodescript",
+				"path": "./syntaxes/livecodescript.tmLanguage.json"
+			}
+		],
+
+		"snippets": [
+			{
+				"language": "livecodescript",
+				"path": "./snippets/livecode.code-snippets"
+			}
+		]
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ferruslogic/livecodescript-language.git"
+	},
+	"keywords": [
+		"livecodescript",
+		"livecodescript-language",
+		"vscode",
+		"vscode-extension",
+		"vscode-language"
+	],
+
+	
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/ferruslogic/livecodescript-language/issues"
+	},
+	"homepage": "https://github.com/ferruslogic/livecodescript-language#readme",
+	"__metadata": {
+		"id": "9e81ad19-83f0-49f1-b5e8-054c3a006e3b",
+		"publisherId": "e92ab4ab-9aac-4dca-ba59-7e682c3cd713",
+		"publisherDisplayName": "dberezin"
+
+
+
+
+
+	}
+}
