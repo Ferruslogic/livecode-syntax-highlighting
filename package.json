@@ -2,7 +2,7 @@
 	"name": "livecode-syntax-highlighting",
 	"displayName": "LiveCode Syntax Highlighting",
 	"description": "Syntax highlighting for livecode language",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"icon": "https://livecode.com/wp-content/uploads/2015/02/LiveCode-Community-Icon.png",
 	"publisher": "FerrusLogic",
 	"author": "FerrusLogic",
@@ -73,6 +73,10 @@
 	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/Ferruslogic/livecode-syntax-highlighting/issues"
-	}
+	},
+	"repository": {
+        "type": "git",
+        "url": "https://github.com/Ferruslogic/livecode-syntax-highlighting"
+    },
 	
 }
