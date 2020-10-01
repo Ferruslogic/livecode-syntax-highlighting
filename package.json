@@ -40,6 +40,11 @@
 				"language": "livecodescript",
 				"scopeName": "source.livecodescript",
 				"path": "./syntaxes/livecodescript.tmLanguage.json"
+			},
+			{
+				"language": "lcb",
+				"scopeName": "source.lcb",
+				"path": "./syntaxes/lcb.tmLanguage.json"
 			}
 		],
 
@@ -67,17 +72,8 @@
 	
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/ferruslogic/livecodescript-language/issues"
+		"url": "https://github.com/Ferruslogic/livecode-syntax-highlighting/issues"
 	},
-	"homepage": "https://github.com/ferruslogic/livecodescript-language#readme",
-	"__metadata": {
-		"id": "9e81ad19-83f0-49f1-b5e8-054c3a006e3b",
-		"publisherId": "e92ab4ab-9aac-4dca-ba59-7e682c3cd713",
-		"publisherDisplayName": "FerrusLogic"
+	"homepage": "https://github.com/Ferruslogic/livecode-syntax-highlighting#readme",
 
-
-
-
-
-	}
 }
