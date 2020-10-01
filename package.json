@@ -5,7 +5,7 @@
 	"version": "0.0.1",
 	"publisher": "FerrusLogic",
 	"author": "FerrusLogic",
-	"icon": "images/CILogo.png",
+	"icon": "images/LClogo.svg",
 	"engines": {
 		"vscode": "^1.24.0"
 	},
@@ -23,6 +23,16 @@
 					".livecodescript"
 				],
 				"configuration": "./language-configuration.json"
+			},
+			{
+				"id": "lcb",
+				"aliases": [
+					"lcb"
+				],
+				"extensions": [
+					".lcb"
+				],
+				"configuration": "./lcb-language-configuration.json"
 			}
 		],
 		"grammars": [
@@ -45,7 +55,9 @@
 		"url": "git+https://github.com/ferruslogic/livecodescript-language.git"
 	},
 	"keywords": [
-		"livecodescript",
+		"livecode",
+		"livecode-builder",
+		"lcb",
 		"livecodescript-language",
 		"vscode",
 		"vscode-extension",
@@ -61,7 +73,7 @@
 	"__metadata": {
 		"id": "9e81ad19-83f0-49f1-b5e8-054c3a006e3b",
 		"publisherId": "e92ab4ab-9aac-4dca-ba59-7e682c3cd713",
-		"publisherDisplayName": "dberezin"
+		"publisherDisplayName": "FerrusLogic"
 
 
 
