@@ -1,79 +1,75 @@
 {
-	"name": "livecode-syntax-highlighting",
-	"displayName": "LiveCode Syntax Highlighting",
-	"description": "Syntax highlighting for livecode language",
-	"version": "0.0.2",
-	"icon": "https://livecode.com/wp-content/uploads/2015/02/LiveCode-Community-Icon.png",
-	"publisher": "FerrusLogic",
-	"author": "FerrusLogic",
-	"engines": {
-		"vscode": "^1.24.0"
-	},
-	"categories": [
-		"Programming Languages"
-	],
-	"contributes": {
-		"languages": [
-			{
-				"id": "livecodescript",
-				"aliases": [
-					"livecodescript"
-				],
-				"extensions": [
-					".livecodescript"
-				],
-				"configuration": "./language-configuration.json"
-			},
-			{
-				"id": "lcb",
-				"aliases": [
-					"lcb"
-				],
-				"extensions": [
-					".lcb"
-				],
-				"configuration": "./lcb-language-configuration.json"
-			}
-		],
-		"grammars": [
-			{
-				"language": "livecodescript",
-				"scopeName": "source.livecodescript",
-				"path": "./syntaxes/livecodescript.tmLanguage.json"
-			},
-			{
-				"language": "lcb",
-				"scopeName": "source.lcb",
-				"path": "./syntaxes/lcb.tmLanguage.json"
-			}
-		],
+    "name": "livecode-syntax-highlighting",
+    "displayName": "LiveCode Syntax Highlighting",
+    "description": "Syntax highlighting for livecode language",
+    "version": "0.0.2",
+    "icon": "images/LiveCode-Community-Icon.png",
+    "publisher": "FerrusLogic",
+    "author": "FerrusLogic",
+    "engines": {
+        "vscode": "^1.24.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+                "id": "livecodescript",
+                "aliases": [
+                    "livecodescript"
+                ],
+                "extensions": [
+                    ".livecodescript"
+                ],
+                "configuration": "./language-configuration.json"
+            },
+            {
+                "id": "lcb",
+                "aliases": [
+                    "lcb"
+                ],
+                "extensions": [
+                    ".lcb"
+                ],
+                "configuration": "./lcb-language-configuration.json"
+            }
+        ],
+        "grammars": [{
+                "language": "livecodescript",
+                "scopeName": "source.livecodescript",
+                "path": "./syntaxes/livecodescript.tmLanguage.json"
+            },
+            {
+                "language": "lcb",
+                "scopeName": "source.lcb",
+                "path": "./syntaxes/lcb.tmLanguage.json"
+            }
+        ],
 
-		"snippets": [
-			{
-				"language": "livecodescript",
-				"path": "./snippets/livecode.code-snippets"
-			}
-		]
-	},
-	
-	"keywords": [
-		"livecode",
-		"livecode-builder",
-		"lcb",
-		"livecodescript-language",
-		"vscode",
-		"vscode-extension",
-		"vscode-language"
-	],
+        "snippets": [{
+            "language": "livecodescript",
+            "path": "./snippets/livecode.code-snippets"
+        }]
+    },
 
-	
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/Ferruslogic/livecode-syntax-highlighting/issues"
-	},
-	"repository": {
+    "keywords": [
+        "livecode",
+        "livecode-builder",
+        "lcb",
+        "livecodescript-language",
+        "vscode",
+        "vscode-extension",
+        "vscode-language"
+    ],
+
+
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Ferruslogic/livecode-syntax-highlighting/issues"
+    },
+    "repository": {
         "type": "git",
         "url": "https://github.com/Ferruslogic/livecode-syntax-highlighting"
     }
-	
+
 }
