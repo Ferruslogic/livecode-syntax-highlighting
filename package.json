@@ -1,11 +1,11 @@
 {
-	"name": "livecode",
-	"displayName": "LiveCode",
+	"name": "livecode-syntax-highlighting",
+	"displayName": "LiveCode Syntax Highlighting",
 	"description": "Syntax highlighting for livecode language",
 	"version": "0.0.1",
 	"publisher": "FerrusLogic",
 	"author": "FerrusLogic",
-	"icon": "images/LClogo.svg",
+	"icon": "images/LClogo.png",
 	"engines": {
 		"vscode": "^1.24.0"
 	},
