@@ -55,10 +55,7 @@
 			}
 		]
 	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/ferruslogic/livecodescript-language.git"
-	},
+	
 	"keywords": [
 		"livecode",
 		"livecode-builder",
@@ -77,6 +74,6 @@
 	"repository": {
         "type": "git",
         "url": "https://github.com/Ferruslogic/livecode-syntax-highlighting"
-    },
+    }
 	
 }
