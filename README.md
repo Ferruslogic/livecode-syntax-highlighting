@@ -8,5 +8,6 @@ This extension provides syntax highlighting for Livecodescript and livecode buil
 
 ## Installation
 
-Search Extension `livecode` in Marketplace.
+* Search Extension `livecodescrip` or `lcb` in Marketplace.
+* Or you can run  `code --install-extension ferruslogic.livecode-syntax-highlighting` from command line.
 
