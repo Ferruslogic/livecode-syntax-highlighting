@@ -4,7 +4,7 @@ The syntax highlighting for [Livecode](https://livecode.com).
 
 This extension provides syntax highlighting for Livecodescript and livecode builder (LCB).
 
-![](https://user-images.githubusercontent.com/1908863/43973406-1a565e62-9c9d-11e8-9696-9a235cdadfae.png)
+![](https://raw.githubusercontent.com/Ferruslogic/livecode-syntax-highlighting/master/images/Screenshot.png?token=ALEGNPIN2HZEEVVHAP5U2ZC7OYJFK)
 
 ## Installation
 
