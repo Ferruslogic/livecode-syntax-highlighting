@@ -19,7 +19,8 @@
                     "livecodescript"
                 ],
                 "extensions": [
-                    ".livecodescript"
+                    ".livecodescript",
+                    ".lc"
                 ],
                 "configuration": "./language-configuration.json"
             },
