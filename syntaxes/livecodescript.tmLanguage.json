@@ -103,7 +103,8 @@
 							"name": "punctuation.definition.variable.livecodescript"
 						}
 					},
-					"match": "(private\\s+)*((?i)function|on|command|before|after)\\s+([A-Za-z_0-9-]+)(\\s+@*[A-Za-z_0-9-]+,*?\\s+.*)*",
+					"match": "(private\\s+)*((?i)function|on|command|before|after)\\s+([A-Za-z_0-9-.]+)(\\s+@*[A-Za-z_0-9-]+,*?\\s+.*)*",
+					
 					"name": "meta.function.livecodescript"
 				},
 				{
