@@ -88,6 +88,23 @@
 					"match": "\\b(catch|try|throw)\\b",
 					"name": "keyword.control.exception.livecodescript"
 				},
+
+
+
+
+				{
+					"begin": "/\\*",
+					"captures": {
+						"0": {
+							"name": "punctuation.definition.comment.lcb"
+						}
+					},
+					"end": "\\*/",
+					"name": "comment.block.lcb"
+				},
+
+
+
 				{
 					"captures": {
 						"1": {
@@ -104,7 +121,6 @@
 						}
 					},
 					"match": "(private\\s+)*((?i)function|on|command|before|after)\\s+([A-Za-z_0-9-.]+)(\\s+@*[A-Za-z_0-9-]+,*?\\s+.*)*",
-					
 					"name": "meta.function.livecodescript"
 				},
 				{
@@ -113,10 +129,10 @@
 							"name": "storage.type.function.end.livecodescript"
 						},
 						"2": {
-							"name": "entity.name.end.function.livecodescript"
+							"name": "entity.name.function.livecodescript"
 						}
 					},
-					"match": "((?i)end){1}\\s+?([A-Za-z_0-9-]+)?",
+					"match": "((?i)end){1}\\s+?([A-Za-z_0-9-.]+)?",
 					"name": "meta.function.end.livecodescript"
 				},
 				{
