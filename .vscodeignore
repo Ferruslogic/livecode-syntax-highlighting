@@ -1,6 +1,4 @@
 .vscode
-.github
-.gitnore
 node_modules
 out/
 src/
