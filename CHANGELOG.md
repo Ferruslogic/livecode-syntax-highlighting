@@ -1,5 +1,11 @@
 # Change Log
 
+### 0.0.4 - 2020-06-06
+ * ADDED Basic support for extension "lc" (thanks to SparkOut from lc forum)
+ * ADDED Folding to "if" statement (LCB)
+ 
+
+
 ### 0.0.3 - 2020-06-06
  * ADDED   LCB handler folding
  * FIXED   Recognizing . as part of command names
