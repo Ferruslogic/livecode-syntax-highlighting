@@ -25,11 +25,17 @@
     ],
 
     "folding": {
-        "markers": {
-            "start": "^public|private|handler",
-            "end": "^end\\shandler"
-        }
+        "markers": 
+                {
+            "start": "^(public|private|handler)|(if\\s*)",
+            "end": "^(end\\shandler)|(end\\sif\\b)"
+          
+        },    
     }
+
+
+
+    
 }
 
 
