@@ -8,6 +8,12 @@
 	"patterns": [
 		{
 			"include": "#language"
+		},
+		{
+			"include": "#line-continuation"
+		},
+		{
+			"include": "constants"
 		}
 	],
 	"repository": {
@@ -27,6 +33,22 @@
 					"end": "\"",
 					"patterns": []
 				}
+			]
+		},
+		"line-continuation": {
+			"patterns": [
+				{
+					"match": "(\\\\)\\s*(\\S.*$\\n?)",
+					"captures": {
+						"1": {
+							"name": "punctuation.separator.continuation.line.livecodescript"
+						},
+						"2": {
+							"name": "invalid.illegal.line.continuation.livecodescript"
+						}
+					}
+				}
+			
 			]
 		},
 		"language": {
@@ -88,10 +110,6 @@
 					"match": "\\b(catch|try|throw)\\b",
 					"name": "keyword.control.exception.livecodescript"
 				},
-
-
-
-
 				{
 					"begin": "/\\*",
 					"captures": {
@@ -102,9 +120,6 @@
 					"end": "\\*/",
 					"name": "comment.block.lcb"
 				},
-
-
-
 				{
 					"captures": {
 						"1": {
