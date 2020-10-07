@@ -52,6 +52,10 @@
 			"include": "#brackets"
 		},
 		{
+			"include": "#line-continuation"
+		},
+		
+		{
 			"match": "\\b(true|false|nothing|undefined|any|the\\s*empty\\s*(array|list|string|data))\\b",
 			"captures": {
 				"1": {
@@ -93,6 +97,22 @@
 		}
 	],
 	"repository": {
+		"line-continuation": {
+			"patterns": [
+				{
+					"match": "(\\\\)\\s*(\\S.*$\\n?)",
+					"captures": {
+						"1": {
+							"name": "punctuation.separator.continuation.line.lcb"
+						},
+						"2": {
+							"name": "invalid.illegal.line.continuation.lcb"
+						}
+					}
+				}
+			
+			]
+		},
 		"comment-line": {
 			"patterns": [
 				{
