@@ -165,6 +165,7 @@
 				},
 				{
 					"match": "(&|&&)",
+					"comment": "concatenate two expresions (use && to concatenate with a space in betwin)",
 					"name": "keyword.operator.string.livecodescript"
 				},
 				{

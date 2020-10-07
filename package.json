@@ -2,7 +2,7 @@
     "name": "livecode-syntax-highlighting",
     "displayName": "LiveCode Syntax Highlighting",
     "description": "Syntax highlighting for livecode language",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "icon": "images/LiveCode-Community-Icon.png",
     "publisher": "FerrusLogic",
     "author": "FerrusLogic",
