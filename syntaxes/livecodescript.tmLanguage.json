@@ -1,10 +1,8 @@
 {
 	"scopeName": "source.livecodescript",
 	"name": "LiveCode Script",
-	"fileTypes": [
-		"livecodescript"
-	],
-	"firstLineMatch": "^#!.*\\b(livecode)|^#\\s*-\\*-[^*]*mode:\\s*livecodescript[^*]*-\\*-|script \"([A-Za-z_0-9]*)\"",
+
+
 	"patterns": [
 		{
 			"include": "#language"
@@ -205,50 +203,47 @@
 				"name": "punctuation.definition.string.end.livecodescript"
 			}
 		},
-		"name": "string.quoted.double.livecodescript",
-		"patterns": [
-			{
-				"include": "#interpolation"
-			}
-		]
-	},
-	"var_global": {
-		"match": "\\bg[A-Z]{1}.*?\\b",
-		"name": "variable.other.global.livecodescript"
-	},
-	"var_local": {
-		"match": "\\bt[he]*[A-Z]{1}.*?\\b",
-		"name": "variable.other.local.livecodescript"
-	},
-	"var_parameter": {
-		"match": "\\bp[A-Z]{1}.*?\\b",
-		"name": "variable.other.param.livecodescript"
-	},
-	"var_scriptLocal": {
-		"match": "\\bs[A-Z]{1}.*?\\b",
-		"name": "variable.other.scriptlocal.livecodescript"
-	},
-	"var_server": {
-		"match": "\\$_[A-Z]+",
-		"name": "variable.other.server.livecodescript"
-	},
-	"variables": {
-		"patterns": [
-			{
-				"include": "#var_global"
-			},
-			{
-				"include": "#var_scriptLocal"
-			},
-			{
-				"include": "#var_local"
-			},
-			{
-				"include": "#var_parameter"
-			},
-			{
-				"include": "#var_server"
-			}
-		]
+	
+
+		"var_global": {
+			"match": "\\bg[A-Z]{1}.*?\\b",
+			"name": "variable.other.global.livecodescript"
+		},
+		"var_local": {
+			"match": "\\bt[he]*[A-Z]{1}.*?\\b",
+			"name": "variable.other.local.livecodescript"
+		},
+		"var_parameter": {
+			"match": "\\bp[A-Z]{1}.*?\\b",
+			"name": "variable.other.param.livecodescript"
+		},
+		"var_scriptLocal": {
+			"match": "\\bs[A-Z]{1}.*?\\b",
+			"name": "variable.other.scriptlocal.livecodescript"
+		},
+		"var_server": {
+			"match": "\\$_[A-Z]+",
+			"name": "variable.other.server.livecodescript"
+		},
+		"variables": {
+			"patterns": [
+				{
+					"include": "#var_global"
+				},
+				{
+					"include": "#var_scriptLocal"
+				},
+				{
+					"include": "#var_local"
+				},
+				{
+					"include": "#var_parameter"
+				},
+				{
+					"include": "#var_server"
+				}
+			]
+		}
 	}
+	
 }
