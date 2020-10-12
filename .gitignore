@@ -1,2 +1,5 @@
-*.0.2.vsix
-*.0.4.vsix
+out
+node_modules
+.vscode-test/
+*.vsix
+

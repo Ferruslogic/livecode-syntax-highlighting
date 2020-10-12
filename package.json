@@ -2,7 +2,7 @@
     "name": "livecode-syntax-highlighting",
     "displayName": "LiveCode Syntax Highlighting",
     "description": "Syntax highlighting for livecode language",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "icon": "images/LiveCode-Community-Icon.png",
     "publisher": "FerrusLogic",
     "author": "FerrusLogic",
@@ -13,7 +13,8 @@
         "Programming Languages"
     ],
     "contributes": {
-        "languages": [{
+        "languages": [
+            {
                 "id": "livecodescript",
                 "aliases": [
                     "livecodescript"
@@ -35,7 +36,8 @@
                 "configuration": "./lcb-language-configuration.json"
             }
         ],
-        "grammars": [{
+        "grammars": [
+            {
                 "language": "livecodescript",
                 "scopeName": "source.livecodescript",
                 "path": "./syntaxes/livecodescript.tmLanguage.json"
@@ -46,13 +48,29 @@
                 "path": "./syntaxes/lcb.tmLanguage.json"
             }
         ],
-
-        "snippets": [{
-            "language": "livecodescript",
-            "path": "./snippets/livecode.code-snippets"
-        }]
+        "snippets": [
+            {
+                "language": "livecodescript",
+                "path": "./snippets/livecode.code-snippets"
+            }
+        ],
+        "configuration": {
+            "type": "object",
+            "title": "LC Language",
+            "properties": {
+                "configurationDefaults": {
+                    "[livecodescript]": {
+                        "editor.quickSuggestions": true,
+                        "editor.tabSize": 4,
+                        "editor.insertSpaces": false,
+                        "editor.detectIndentation": true,
+                        "editor.trimAutoWhitespace": true,
+                        "editor.autoClosingBrackets": true
+                    }
+                }
+            }
+        }
     },
-
     "keywords": [
         "livecode",
         "livecode-builder",
@@ -62,8 +80,10 @@
         "vscode-extension",
         "vscode-language"
     ],
-
-
+    "main": "./out/extension.js",
+    "activationEvents": [
+        "onLanguage:livecodescript"
+    ],
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/Ferruslogic/livecode-syntax-highlighting/issues"
@@ -71,6 +91,16 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/Ferruslogic/livecode-syntax-highlighting"
+    },
+    "devDependencies": {
+        "typescript": "^3.7.5",
+        "vscode-test": "^1.3.0",
+        "@types/vscode": "^1.20.0"
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "pretest": "npm run compile"
     }
-
 }
