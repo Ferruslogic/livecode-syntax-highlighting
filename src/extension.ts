@@ -37,12 +37,20 @@ class livecodescriptConfigDocumentSymbolProvider implements vscode.DocumentSymbo
             let symbolkind_getprop = vscode.SymbolKind.Property
             let symbolkind_setprop = vscode.SymbolKind.Property
             let symbolkind_comment = vscode.SymbolKind.String
+            let symbolkind_variable = vscode.SymbolKind.Variable
 
 
             for (var i = 0; i < document.lineCount; i++) {
                 var line = document.lineAt(i);
 
-                let tokens = line.text.split(" ")
+                let tokensDirty = line.text.split(/\s/)
+         
+
+                var tokens = tokensDirty.filter(function (el) {
+                    return el != '';
+                    
+                  });
+
 
 
                 ////Event (On)
@@ -65,7 +73,7 @@ class livecodescriptConfigDocumentSymbolProvider implements vscode.DocumentSymbo
 
 
                       ////Event (before or afer)
-                      if (line.text.match(/^before|after\s+[\w]+/i)) {
+                      if (line.text.match(/^before|^after\s+[\w]+/i)) {
                         let marker_symbol = new vscode.DocumentSymbol(tokens[1], tokens[2], symbolkind_event, line.range, line.range)
                         nodes[nodes.length - 1].push(marker_symbol)
                         if (!inside_marker) {
@@ -228,6 +236,37 @@ class livecodescriptConfigDocumentSymbolProvider implements vscode.DocumentSymbo
                         inside_marker = false
                     }
                 }
+
+            
+                 
+
+
+                if (line.text.match(/^\s*global|^\s*local/i)) {
+                    let marker_symbol = new vscode.DocumentSymbol(tokens[0]+' '+tokens[1],  "variable definition", symbolkind_variable, line.range, line.range)
+                    nodes[nodes.length - 1].push(marker_symbol)
+                    if (!inside_marker) {
+                        //nodes.push(marker_symbol.children)
+                       // inside_marker = true
+                    }
+                    // marker_symbol.children.push(_boot)
+
+                  
+                        // TODO check if nodes has length 1 before popping.
+                      /*  if (inside_marker) {
+                            nodes.pop()
+                           // inside_marker = false
+                        }*/
+                   
+    
+                }
+              
+
+
+
+                  
+                    
+                
+                
 
 
             }
