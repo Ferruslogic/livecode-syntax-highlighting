@@ -1,5 +1,12 @@
 # Change Log
 
+## 0.0.8 - 2020-10-12
+
+ * Improved code outline in lcs
+ 
+
+
+
 ## 0.0.7 - 2020-10-11
 
  * Fixed Multiline comment detection
@@ -10,7 +17,7 @@
 ## 0.0.6 - 2020-10-11
 
  * Added outline for livecodescript
- * Severanl performance improvements
+ * Several performance improvements
 
 
 ## 0.0.5 - 2020-10-07
